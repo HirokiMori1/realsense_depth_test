@@ -15,9 +15,9 @@ class Depth:
 
 
     def callback(self, data):
-        
+        #Image型をOpenCVの画像に変換
         depth = self.bridge.imgmsg_to_cv2(data, 'passthrough')
-
+        #画像中心の距離を出力
         print(depth[240,320])
 
 
